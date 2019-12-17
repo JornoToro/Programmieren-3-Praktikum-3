@@ -1,4 +1,4 @@
-package Aufgaben;
+package aufgaben;
 
 
 public class SysoutTracer implements Tracer

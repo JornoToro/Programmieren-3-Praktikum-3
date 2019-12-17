@@ -1,6 +1,6 @@
-package Aufgaben;
+package aufgaben;
 
-import static Aufgaben.Operation.*;
+import static aufgaben.Operation.*;
 /**
  * !Gegeben: OperationsSequential
  */

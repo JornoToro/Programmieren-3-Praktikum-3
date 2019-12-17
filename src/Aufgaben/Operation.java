@@ -1,4 +1,4 @@
-package Aufgaben;
+package aufgaben;
 
 public enum Operation
 {

@@ -1,6 +1,6 @@
-package Aufgaben;
+package aufgaben;
 
-import static Aufgaben.Operation.*;
+import static aufgaben.Operation.*;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -57,13 +57,13 @@ public class OperationsCountDown extends Thread {
 
         init(args);
 
-        Thread t0 = new OperationsSimpleParallel();
+        final Thread t0 = new OperationsSimpleParallel();
         t0.start();
 
-        Thread t1 = new OperationsSimpleParallel();
+        final Thread t1 = new OperationsSimpleParallel();
         t1.start();
 
-        Thread t2 = new OperationsSimpleParallel();
+        final Thread t2 = new OperationsSimpleParallel();
         t2.start();
 
         //Wartet bis jeder fertig ist

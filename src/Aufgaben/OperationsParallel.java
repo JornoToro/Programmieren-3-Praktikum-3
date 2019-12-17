@@ -1,6 +1,6 @@
-package Aufgaben;
+package aufgaben;
 
-import static Aufgaben.Operation.*;
+import static aufgaben.Operation.*;
 
 /**
  * ! 3. Aufgabe: OperationsParallel
@@ -68,13 +68,13 @@ public class OperationsParallel extends Thread {
     public static void main(String[] args) throws InterruptedException {
         init(args);
 
-        Thread t0 = new OperationsSimpleParallel();
+        final Thread t0 = new OperationsSimpleParallel();
         t0.start();
 
-        Thread t1 = new OperationsSimpleParallel();
+        final Thread t1 = new OperationsSimpleParallel();
         t1.start();
 
-        Thread t2 = new OperationsSimpleParallel();
+        final Thread t2 = new OperationsSimpleParallel();
         t2.start();
 
         //Wartet bis jeder fertig ist
