@@ -2,11 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - OperationsSimpleParallel",
+            "request": "launch",
+            "mainClass": "Aufgabe1.OperationsSimpleParallel",
+            "projectName": "Programmieren-3-Praktikum-3_d7fb9331",
+            "vmArgs": "-enableassertions"
+
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - OperationsSequential",
             "request": "launch",
             "mainClass": "Aufgabe1.OperationsSequential",
             "projectName": "Programmieren-3-Praktikum-3_d7fb9331",
-            "args": "100"
+            "vmArgs": "-enableassertions"
         }
     ]
 }
