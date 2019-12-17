@@ -3,14 +3,67 @@ package Aufgaben;
 import static Aufgaben.Operation.*;
 
 /**
- * OperationsParallel
+ * ! 3. Aufgabe: OperationsParallel
  */
-public class OperationsParallel extends Thread{
+public class OperationsParallel extends Thread {
+
+    // c2: startet nach A1, B1, C1
+    // c3: startet nach zwei von drei A2, B2, C2
 
     @Override
     public void run() {
-        
+        if (Thread.currentThread().getName().equals("Thread-0")) {
+            A1.exec();
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            A2.exec();
+            A2.exec();
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            A3.exec();
+        }
+
+        if (Thread.currentThread().getName().equals("Thread-1")) {
+            B1.exec();
+            try {
+                wait();
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
+            B2.exec();
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            B3.exec();
+        }
+
+        if (Thread.currentThread().getName().equals("Thread-2")) {
+
+            C1.exec();
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            C2.exec();
+            notifyAll();
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            C3.exec();
+        }
     }
+
 
     public static void main(String[] args) throws InterruptedException {
         init(args);
