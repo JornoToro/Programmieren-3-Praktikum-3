@@ -28,7 +28,7 @@ public class OperationsSimpleParallel extends Thread {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         init(args);
 
         Thread t0 = new OperationsSimpleParallel();
@@ -40,5 +40,10 @@ public class OperationsSimpleParallel extends Thread {
         Thread t2 = new OperationsSimpleParallel();
         t2.start();
 
+        //Wartet bis jeder fertig ist
+        t0.join();
+        t1.join();
+        t2.join();
+        System.out.println("complete");
     }
 }
