@@ -1,7 +1,9 @@
-package Aufgabe1;
+package Aufgaben;
 
-import static Aufgabe1.Operation.*;
-
+import static Aufgaben.Operation.*;
+/**
+ * !Gegeben: OperationsSequential
+ */
 public class OperationsSequential
 {
     public static void main(String... args) {

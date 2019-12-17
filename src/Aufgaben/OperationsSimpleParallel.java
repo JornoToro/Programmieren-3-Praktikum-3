@@ -1,9 +1,9 @@
-package Aufgabe1;
+package Aufgaben;
 
-import static Aufgabe1.Operation.*;
+import static Aufgaben.Operation.*;
 
 /**
- * OperationsSimpleParallel
+ * ! 1. Aufgabe: OperationsSimpleParallel
  */
 public class OperationsSimpleParallel extends Thread {
 
