@@ -2,12 +2,35 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - OperationsParallel_v2",
+            "request": "launch",
+            "mainClass": "aufgaben.OperationsParallel_v2",
+            "projectName": "Programmieren-3-Praktikum-3_d7fb9331",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OperationsCountDown_v2",
+            "request": "launch",
+            "mainClass": "aufgaben.OperationsCountDown_v2",
+            "projectName": "Programmieren-3-Praktikum-3_d7fb9331",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OperationsSimpleParallel_v2",
+            "request": "launch",
+            "mainClass": "aufgaben.OperationsSimpleParallel_v2",
+            "projectName": "Programmieren-3-Praktikum-3_d7fb9331",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - OperationsParallel_2",
             "request": "launch",
             "mainClass": "aufgaben.OperationsParallel_2",
             "projectName": "Programmieren-3-Praktikum-3_d7fb9331",
             "vmArgs": "-enableassertions"
-
         },
         {
             "type": "java",
