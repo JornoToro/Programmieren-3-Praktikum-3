@@ -57,13 +57,13 @@ public class OperationsCountDown extends Thread {
 
         init(args);
 
-        final Thread t0 = new OperationsSimpleParallel();
+        final Thread t0 = new OperationsCountDown();
         t0.start();
 
-        final Thread t1 = new OperationsSimpleParallel();
+        final Thread t1 = new OperationsCountDown();
         t1.start();
 
-        final Thread t2 = new OperationsSimpleParallel();
+        final Thread t2 = new OperationsCountDown();
         t2.start();
 
         //Wartet bis jeder fertig ist

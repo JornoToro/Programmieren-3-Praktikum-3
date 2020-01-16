@@ -68,13 +68,13 @@ public class OperationsParallel extends Thread {
     public static void main(String[] args) throws InterruptedException {
         init(args);
 
-        final Thread t0 = new OperationsSimpleParallel();
+        final Thread t0 = new OperationsParallel();
         t0.start();
 
-        final Thread t1 = new OperationsSimpleParallel();
+        final Thread t1 = new OperationsParallel();
         t1.start();
 
-        final Thread t2 = new OperationsSimpleParallel();
+        final Thread t2 = new OperationsParallel();
         t2.start();
 
         //Wartet bis jeder fertig ist
