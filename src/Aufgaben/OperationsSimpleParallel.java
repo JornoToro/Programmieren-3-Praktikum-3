@@ -40,6 +40,14 @@ public class OperationsSimpleParallel extends Thread {
         final Thread t2 = new OperationsSimpleParallel();
         t2.start();
 
+        //! schönere Variante, erste später bemerkt
+        /* 
+        Thread t0 = new Thread(() -> {A1.exec();A2.exec();A3.exec();});
+        Thread t1 = new Thread(() -> {B1.exec();B2.exec();B3.exec();});
+        Thread t2 = new Thread(() -> {C1.exec();C2.exec();C3.exec();}); 
+        */
+
+
         //Wartet bis jeder fertig ist
         t0.join();
         t1.join();
