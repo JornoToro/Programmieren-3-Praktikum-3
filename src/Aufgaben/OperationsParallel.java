@@ -20,7 +20,7 @@ public class OperationsParallel {
         Thread t0 = new Thread(() -> {
             A1.exec();
             synchronized (lock) {
-                try {
+                try {//hier while-Schleife
                     if(t > 0){
                         t--;
                         lock.wait();
